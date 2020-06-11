@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ToDoListStoreContainer" CdmEntityContainer="ToDoListContainer">
+    <EntitySetMapping Name="ListItems">
+      <EntityTypeMapping TypeName="IsTypeOf(ToDoList.ListItem)">
+        <MappingFragment StoreEntitySet="ListItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ToDo" ColumnName="ToDo" />
+          <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
